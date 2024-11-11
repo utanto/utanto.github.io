@@ -15,7 +15,7 @@
   <body id="beranda">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#"><img src="aset/img/logo mc.jpg" alt="utanto" width="30" height="30" class="d-inline-block align-text-top rounded-circle "> Om YUDI</a>
+        <a class="navbar-brand" href="#"><img src="aset/img/logo mc.jpg" alt="utanto" width="30" height="30" class="d-inline-block align-text-top rounded-circle "> Om YUDI (@TIKTOK.TAKTIS)</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,12 +31,12 @@
     </nav>
 
     <section class="jumbotron text-center">
-      <img src="aset/img/yudi.jpg" alt="utanto" width="250" class="rounded-circle img-thumbnail">
+      <img src="aset/img/yudi.png" alt="utanto" width="250" class="rounded-circle img-thumbnail">
       <h1>YUDI UTANTO <i class="bi bi-patch-check-fill text-primary"></i></h1>
       <p id="age"></p>
       <p>
         Mentor Mobileclass :
-        <br><i class="bi bi-check2-circle text-success"></i> Basic
+        <!-- <br><i class="bi bi-check2-circle text-success"></i> Basic -->
         <br><i class="bi bi-check2-circle text-success"></i> VIP
         <br><i class="bi bi-check2-circle text-success"></i> VVIP
       </p>
@@ -47,7 +47,7 @@
       <div class="container text-center">
         <div class="mb-3 ">
           <h2>Tentang Saya</h2>
-            <p>Saya adalah seorang <!-- mentor di program Mobile Class dengan keahlian dalam analisis data, copywriting, programming, dan sales promotion.  -->Dengan pengalaman dalam memandu dan mendukung rekan untuk mengoptimalkan keterampilan mereka di bidang digital, latar belakang programming membantu saya dalam menciptakan solusi teknologi yang efisien, saya berfokus pada cara-cara efektif untuk memaksimalkan potensi melalui pendekatan berbasis data dan strategi pemasaran yang tepat.</p>
+            <p>Saya adalah seorang <!-- mentor di program Mobile Class dengan keahlian dalam analisis data, copywriting, programming, dan sales promotion.  -->Dengan pengalaman dalam memandu dan mendukung rekan untuk mengoptimalkan keterampilan mereka di bidang digital, latar belakang programming membantu saya dalam menciptakan solusi teknologi yang efisien, saya berfokus pada cara-cara efektif untuk memaksimalkan potensi melalui pendekatan berbasis data dan strategi yang tepat.</p>
         </div>
       </div>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f5fff5" fill-opacity="1" d="M0,128L60,128C120,128,240,128,360,149.3C480,171,600,213,720,234.7C840,256,960,256,1080,229.3C1200,203,1320,149,1380,122.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
@@ -57,7 +57,7 @@
       <div class="container text-center">
           <div class="col text-center">
             <h2>Kontak</h2>
-            <h1><i class="bi bi-whatsapp text-success"></i> 0856 3456 566</h1>
+            <h1><i class="bi bi-whatsapp text-success"></i> 0851 8666 5293</h1>
             <!-- <br><h3>- OR -</h3><br> -->
           </div> 
           <div ><img src="aset/img/logo_mc.png" alt="mobileclass" class="w-100"></div>
@@ -83,33 +83,10 @@
     -->
 
     <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwwF_HNxj1b6Frd8qhSMVhtVYZ7Tf5KgXHYyAkAbUi7mTPSAG3_uBN0upa2sXX7MB2ENQ/exec'
-  const form = document.forms['utanto_kontak_form']
-  const btnkirim = document.querySelector('.btn_kirim');
-  const btnloading = document.querySelector('.btn_loading');
-  const alert = document.querySelector('.alert');
-
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-
-    btnloading.classList.toggle('d-none');
-    btnkirim.classList.toggle('d-none');
-
-    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-      .then(response => {
-        btnloading.classList.toggle('d-none');
-        btnkirim.classList.toggle('d-none');
-        alert.classList.toggle('d-none');
-        form.reset();
-        console.log('Success!', response)
-      })
-      .catch(error => console.error('Error!', error.message))
-  })
-
-        const birthYear = 1988;
-        const currentYear = new Date().getFullYear();
-        const age = currentYear - birthYear;
-        document.getElementById('age').textContent = age + " tahun";
+      const birthYear = 1988;
+      const currentYear = new Date().getFullYear();
+      const age = currentYear - birthYear;
+      document.getElementById('age').textContent = age + " tahun";
     </script>
 
   </body>
